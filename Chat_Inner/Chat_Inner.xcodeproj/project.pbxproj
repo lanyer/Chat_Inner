@@ -159,6 +159,11 @@
 		51380FBD1D71544100487776 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51380FBC1D71544100487776 /* libxml2.dylib */; };
 		51380FBF1D71544B00487776 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51380FBE1D71544B00487776 /* libresolv.dylib */; };
 		51380FC21D71554700487776 /* ResgisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FC11D71554700487776 /* ResgisterViewController.m */; };
+		51380FC51D7156A200487776 /* ServeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FC41D7156A200487776 /* ServeManager.m */; };
+		51380FCC1D71627400487776 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 51380FC91D71627400487776 /* SVProgressHUD.bundle */; };
+		51380FCD1D71627400487776 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FCB1D71627400487776 /* SVProgressHUD.m */; };
+		516A56861D718C70002DFC7C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A56851D718C70002DFC7C /* Common.m */; };
+		516A56891D7196C4002DFC7C /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A56881D7196C4002DFC7C /* AccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -484,6 +489,16 @@
 		51380FBE1D71544B00487776 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		51380FC01D71554700487776 /* ResgisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResgisterViewController.h; sourceTree = "<group>"; };
 		51380FC11D71554700487776 /* ResgisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResgisterViewController.m; sourceTree = "<group>"; };
+		51380FC31D7156A200487776 /* ServeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServeManager.h; path = Chat_Inner/ServeManager.h; sourceTree = SOURCE_ROOT; };
+		51380FC41D7156A200487776 /* ServeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServeManager.m; path = Chat_Inner/ServeManager.m; sourceTree = SOURCE_ROOT; };
+		51380FC81D71627400487776 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		51380FC91D71627400487776 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		51380FCA1D71627400487776 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		51380FCB1D71627400487776 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		516A56841D718C70002DFC7C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		516A56851D718C70002DFC7C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		516A56871D7196C4002DFC7C /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		516A56881D7196C4002DFC7C /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -530,10 +545,13 @@
 		51380D931D71534200487776 /* Chat_Inner */ = {
 			isa = PBXGroup;
 			children = (
-				51380DBA1D7153DC00487776 /* XMPP */,
 				51380D981D71534200487776 /* AppDelegate.h */,
 				51380D991D71534200487776 /* AppDelegate.m */,
+				516A56841D718C70002DFC7C /* Common.h */,
+				516A56851D718C70002DFC7C /* Common.m */,
+				51380FC61D7156C100487776 /* Manager */,
 				51380FBB1D71542700487776 /* Controllers */,
+				51380FCE1D71628700487776 /* Library */,
 				51380D9E1D71534200487776 /* Main.storyboard */,
 				51380DA11D71534200487776 /* Images.xcassets */,
 				51380DA31D71534200487776 /* LaunchScreen.xib */,
@@ -1441,12 +1459,43 @@
 			children = (
 				51380D9B1D71534200487776 /* mainViewController.h */,
 				51380D9C1D71534200487776 /* mainViewController.m */,
+				516A56871D7196C4002DFC7C /* AccountViewController.h */,
+				516A56881D7196C4002DFC7C /* AccountViewController.m */,
 				51380FB81D71540400487776 /* loginViewController.h */,
 				51380FB91D71540400487776 /* loginViewController.m */,
 				51380FC01D71554700487776 /* ResgisterViewController.h */,
 				51380FC11D71554700487776 /* ResgisterViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		51380FC61D7156C100487776 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				51380FC31D7156A200487776 /* ServeManager.h */,
+				51380FC41D7156A200487776 /* ServeManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		51380FC71D71627400487776 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				51380FC81D71627400487776 /* SVProgressHUD-Prefix.pch */,
+				51380FC91D71627400487776 /* SVProgressHUD.bundle */,
+				51380FCA1D71627400487776 /* SVProgressHUD.h */,
+				51380FCB1D71627400487776 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		51380FCE1D71628700487776 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				51380FC71D71627400487776 /* SVProgressHUD */,
+				51380DBA1D7153DC00487776 /* XMPP */,
+			);
+			name = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1530,6 +1579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51380FB61D7153DD00487776 /* build-libidn.sh in Resources */,
+				51380FCC1D71627400487776 /* SVProgressHUD.bundle in Resources */,
 				51380DA01D71534200487776 /* Main.storyboard in Resources */,
 				51380DA51D71534200487776 /* LaunchScreen.xib in Resources */,
 				51380FB11D7153DD00487776 /* README.txt in Resources */,
@@ -1581,6 +1631,7 @@
 				51380F9E1D7153DD00487776 /* XMPPMessage+XEP_0308.m in Sources */,
 				51380D9D1D71534200487776 /* mainViewController.m in Sources */,
 				51380F341D7153DD00487776 /* NSNumber+XMPP.m in Sources */,
+				516A56861D718C70002DFC7C /* Common.m in Sources */,
 				51380F3D1D7153DD00487776 /* XMPPPresence.m in Sources */,
 				51380FAE1D7153DD00487776 /* DDContextFilterLogFormatter.m in Sources */,
 				51380F941D7153DD00487776 /* XMPPPing.m in Sources */,
@@ -1618,6 +1669,7 @@
 				51380F5F1D7153DD00487776 /* XMPPRoomMemoryStorage.m in Sources */,
 				51380F781D7153DD00487776 /* XMPPMessage+XEP_0066.m in Sources */,
 				51380FA51D7153DD00487776 /* XMPPSRVResolver.m in Sources */,
+				51380FCD1D71627400487776 /* SVProgressHUD.m in Sources */,
 				51380FB51D7153DD00487776 /* DDXMLNode.m in Sources */,
 				51380F801D7153DD00487776 /* XMPPCapabilities.xcdatamodel in Sources */,
 				51380F8A1D7153DD00487776 /* XMPPvCardAvatarModule.m in Sources */,
@@ -1649,6 +1701,7 @@
 				51380F561D7153DD00487776 /* XMPPPrivacy.m in Sources */,
 				51380F591D7153DD00487776 /* XMPPRoomMessageCoreDataStorageObject.m in Sources */,
 				51380FA01D7153DD00487776 /* NSXMLElement+XEP_0335.m in Sources */,
+				516A56891D7196C4002DFC7C /* AccountViewController.m in Sources */,
 				51380F501D7153DD00487776 /* XMPPSystemInputActivityMonitor.m in Sources */,
 				51380F551D7153DD00487776 /* XMPPLastActivity.m in Sources */,
 				51380F881D7153DD00487776 /* XMPPMessageArchivingCoreDataStorage.m in Sources */,
@@ -1688,6 +1741,7 @@
 				51380F971D7153DD00487776 /* NSXMLElement+XEP_0203.m in Sources */,
 				51380F391D7153DD00487776 /* XMPPJID.m in Sources */,
 				51380F401D7153DD00487776 /* XMPPCoreDataStorage.m in Sources */,
+				51380FC51D7156A200487776 /* ServeManager.m in Sources */,
 				51380F9B1D7153DD00487776 /* XMPPMessage+XEP_0280.m in Sources */,
 				51380F7E1D7153DD00487776 /* XMPPTransports.m in Sources */,
 				51380F9C1D7153DD00487776 /* XMPPMessageCarbons.m in Sources */,
@@ -1906,6 +1960,7 @@
 				51380DB61D71534200487776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51380DB71D71534200487776 /* Build configuration list for PBXNativeTarget "Chat_InnerTests" */ = {
 			isa = XCConfigurationList;
@@ -1914,6 +1969,7 @@
 				51380DB91D71534200487776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

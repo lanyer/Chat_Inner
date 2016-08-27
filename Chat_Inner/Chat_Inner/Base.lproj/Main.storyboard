@@ -153,7 +153,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.49019607840000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="tLl-aL-apq" firstAttribute="leading" secondItem="cyL-3t-40y" secondAttribute="leadingMargin" constant="64" id="0s4-ao-Wmu"/>
@@ -264,6 +264,10 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="mig-cS-dQd"/>
+                    <connections>
+                        <outlet property="passwordTextfield" destination="rYl-aD-Pai" id="9Aw-Sf-PaO"/>
+                        <outlet property="usernameTextfield" destination="uVQ-Xp-v1L" id="vIx-NV-nln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRg-pY-DtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="WMu-CZ-HK2">
@@ -277,7 +281,7 @@
         <!--注册页面-->
         <scene sceneID="Ork-Ng-TV8">
             <objects>
-                <viewController title="注册页面" id="GpF-Ns-WjO" customClass="ResgisterViewController" sceneMemberID="viewController">
+                <viewController title="注册页面" modalTransitionStyle="flipHorizontal" modalPresentationStyle="currentContext" id="GpF-Ns-WjO" customClass="ResgisterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e4t-R4-fOd"/>
                         <viewControllerLayoutGuide type="bottom" id="O3M-VG-BXp"/>
@@ -285,10 +289,174 @@
                     <view key="view" contentMode="scaleToFill" id="5n6-nt-ab2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_username" translatesAutoresizingMaskIntoConstraints="NO" id="ssF-rr-yhM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="87" y="216" width="29" height="33"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_seperator" translatesAutoresizingMaskIntoConstraints="NO" id="1sn-No-cDc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="61" y="257" width="292" height="2"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_password" translatesAutoresizingMaskIntoConstraints="NO" id="nOF-u3-zn7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="87" y="289" width="29" height="35"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_seperator" translatesAutoresizingMaskIntoConstraints="NO" id="Ecd-FT-V0Z">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="61" y="341" width="292" height="2"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入用户名" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-cP-wlV">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="219" width="181" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bb5-NS-4Ia">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="292" width="181" height="30"/>
+                                </variation>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_email" translatesAutoresizingMaskIntoConstraints="NO" id="w7K-gX-cYR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="87" y="377" width="29" height="25"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_seperator" translatesAutoresizingMaskIntoConstraints="NO" id="oQe-cR-nTJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="61" y="419" width="292" height="2"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入邮箱" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h3F-nR-DkA">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="370" width="181" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUA-FU-seg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="147" y="84" width="120" height="65"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_phone" translatesAutoresizingMaskIntoConstraints="NO" id="FwD-Wr-bA1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="87" y="444" width="29" height="32"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_seperator" translatesAutoresizingMaskIntoConstraints="NO" id="vei-uK-hD6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="61" y="493" width="292" height="2"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o5M-qy-jne">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="444" width="181" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOn-uj-50Y">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="注册">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="563" width="73" height="44"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didRegister:" destination="GpF-Ns-WjO" eventType="touchUpInside" id="Gp8-Kb-2SA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ssF-rr-yhM"/>
+                                <exclude reference="1sn-No-cDc"/>
+                                <exclude reference="nOF-u3-zn7"/>
+                                <exclude reference="Ecd-FT-V0Z"/>
+                                <exclude reference="g5b-cP-wlV"/>
+                                <exclude reference="Bb5-NS-4Ia"/>
+                                <exclude reference="w7K-gX-cYR"/>
+                                <exclude reference="oQe-cR-nTJ"/>
+                                <exclude reference="h3F-nR-DkA"/>
+                                <exclude reference="rUA-FU-seg"/>
+                                <exclude reference="FwD-Wr-bA1"/>
+                                <exclude reference="vei-uK-hD6"/>
+                                <exclude reference="o5M-qy-jne"/>
+                                <exclude reference="fOn-uj-50Y"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ssF-rr-yhM"/>
+                                <include reference="1sn-No-cDc"/>
+                                <include reference="nOF-u3-zn7"/>
+                                <include reference="Ecd-FT-V0Z"/>
+                                <include reference="g5b-cP-wlV"/>
+                                <include reference="Bb5-NS-4Ia"/>
+                                <include reference="w7K-gX-cYR"/>
+                                <include reference="oQe-cR-nTJ"/>
+                                <include reference="h3F-nR-DkA"/>
+                                <include reference="rUA-FU-seg"/>
+                                <include reference="FwD-Wr-bA1"/>
+                                <include reference="vei-uK-hD6"/>
+                                <include reference="o5M-qy-jne"/>
+                                <include reference="fOn-uj-50Y"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wEv-aQ-FSA" appends="YES" id="b8u-Ou-RPG"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="O8H-PK-UOU"/>
+                    <connections>
+                        <outlet property="emailTextfielf" destination="h3F-nR-DkA" id="djU-i7-ygg"/>
+                        <outlet property="passwordTextfield" destination="Bb5-NS-4Ia" id="suq-7C-Etm"/>
+                        <outlet property="phoneNumTextfield" destination="o5M-qy-jne" id="Hla-dK-fOD"/>
+                        <outlet property="usernameTextfield" destination="g5b-cP-wlV" id="RN2-kc-yeR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xir-Kx-eC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nT7-2y-YGV" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="wEv-aQ-FSA">
+                    <connections>
+                        <action selector="didTap:" destination="GpF-Ns-WjO" id="OcF-Ox-Jva"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="FoS-hF-8nL">
+                    <connections>
+                        <segue destination="nT7-2y-YGV" kind="unwind" unwindAction="unwindRegister:" id="KQo-wD-tvx"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1888.5" y="-413.25"/>
         </scene>
@@ -579,6 +747,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="create_email" width="40" height="32"/>
+        <image name="create_phone" width="30" height="50"/>
         <image name="login_password" width="33" height="39"/>
         <image name="login_seperator" width="10" height="1"/>
         <image name="login_username" width="40" height="43"/>

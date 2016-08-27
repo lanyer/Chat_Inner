@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ResgisterViewController : UIViewController
+#import "AccountViewController.h"
+@interface ResgisterViewController : AccountViewController
 
 @end

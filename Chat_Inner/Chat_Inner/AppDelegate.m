@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ServeManager.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [ServeManager sharedManager].didLogin = ^{
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil]; //weak self 
+        UIViewController *viewCtrl = [storyboard instantiateInitialViewController];
+        self.window.rootViewController = viewCtrl;
+    };
+    
     if (YES) {
         UIStoryboard *loginStroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *viewCtrl = [loginStroyboard instantiateViewControllerWithIdentifier:@"loginCtrl"];

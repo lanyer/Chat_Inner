@@ -7,10 +7,13 @@
 //
 
 #import "loginViewController.h"
-
+#import "ServeManager.h"
+#import "SVProgressHUD.h"
 @interface loginViewController ()
 - (IBAction)didlogin:(UIButton *)sender;
-- (IBAction)didTap:(UITapGestureRecognizer *)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameTextfield;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextfield;
 
 @end
 
@@ -37,12 +40,19 @@
 */
 
 - (IBAction)didlogin:(UIButton *)sender {
-    UIStoryboard *stroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *viewCtrl = [stroyboard instantiateInitialViewController];
-    self.view.window.rootViewController = viewCtrl;
+//    UIStoryboard *stroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *viewCtrl = [stroyboard instantiateInitialViewController];
+//    self.view.window.rootViewController = viewCtrl;
+    
+    [[ServeManager sharedManager]loginWithName:self.usernameTextfield.text Password:self.passwordTextfield.text];
+ 
+    //按钮效果 
+    //[SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    //[SVProgressHUD showWithStatus:@"登陆失败"];
 }
 
-- (IBAction)didTap:(UITapGestureRecognizer *)sender {
-    [self.view endEditing:YES];
+
+-(IBAction)unwindRegister:(UIStoryboardSegue*)sender{
+    
 }
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface loginViewController : UIViewController
+#import "AccountViewController.h"
 
+@interface loginViewController : AccountViewController
+-(IBAction)unwindRegister:(UIStoryboardSegue*)sender;
 @end
