@@ -30,6 +30,7 @@
         UIViewController *viewCtrl = [loginStroyboard instantiateViewControllerWithIdentifier:@"loginCtrl"];
         self.window.rootViewController = viewCtrl;
     }
+   
     return YES;
 }
 

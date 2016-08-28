@@ -119,6 +119,8 @@
         self.didLogin();
     }//判断是否有block对象
     [self online];//登入成功发送上线
+    
+
 }
 
 /**

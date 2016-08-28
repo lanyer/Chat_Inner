@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XMPPFramework.h"
+#import "XMPPStream.h"
 @interface ServeManager : NSObject
 
 @property (nonatomic,copy) void (^didLogin)();//代码块 告诉视图登陆成功 发送上线通知
@@ -18,5 +19,7 @@
 
 -(void)online;//上线
 -(void)offline;//下线
+
+
 
 @end
