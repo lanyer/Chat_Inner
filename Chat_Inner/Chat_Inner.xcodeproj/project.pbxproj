@@ -164,6 +164,7 @@
 		51380FCD1D71627400487776 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FCB1D71627400487776 /* SVProgressHUD.m */; };
 		516A56861D718C70002DFC7C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A56851D718C70002DFC7C /* Common.m */; };
 		516A56891D7196C4002DFC7C /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A56881D7196C4002DFC7C /* AccountViewController.m */; };
+		516A568C1D727F79002DFC7C /* UIView+Responder.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A568B1D727F79002DFC7C /* UIView+Responder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -499,6 +500,8 @@
 		516A56851D718C70002DFC7C /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		516A56871D7196C4002DFC7C /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
 		516A56881D7196C4002DFC7C /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		516A568A1D727F79002DFC7C /* UIView+Responder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Responder.h"; sourceTree = "<group>"; };
+		516A568B1D727F79002DFC7C /* UIView+Responder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Responder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -549,6 +552,7 @@
 				51380D991D71534200487776 /* AppDelegate.m */,
 				516A56841D718C70002DFC7C /* Common.h */,
 				516A56851D718C70002DFC7C /* Common.m */,
+				516A568D1D727F83002DFC7C /* Utils */,
 				51380FC61D7156C100487776 /* Manager */,
 				51380FBB1D71542700487776 /* Controllers */,
 				51380FCE1D71628700487776 /* Library */,
@@ -1498,6 +1502,15 @@
 			name = Library;
 			sourceTree = "<group>";
 		};
+		516A568D1D727F83002DFC7C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				516A568A1D727F79002DFC7C /* UIView+Responder.h */,
+				516A568B1D727F79002DFC7C /* UIView+Responder.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1696,6 +1709,7 @@
 				51380F611D7153DD00487776 /* XMPPRoomOccupantMemoryStorageObject.m in Sources */,
 				51380F581D7153DD00487776 /* XMPPRoomCoreDataStorage.m in Sources */,
 				51380FA61D7153DD00487776 /* XMPPStringPrep.m in Sources */,
+				516A568C1D727F79002DFC7C /* UIView+Responder.m in Sources */,
 				51380F9A1D7153DD00487776 /* XMPPMessage+XEP_0224.m in Sources */,
 				51380F7A1D7153DD00487776 /* NSDate+XMPPDateTimeProfiles.m in Sources */,
 				51380F561D7153DD00487776 /* XMPPPrivacy.m in Sources */,
