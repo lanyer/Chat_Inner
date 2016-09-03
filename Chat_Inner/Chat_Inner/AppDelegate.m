@@ -25,15 +25,15 @@
         self.window.rootViewController = viewCtrl;
     };
     
-    if (![[ServeManager sharedManager]islogin]) {
-        UIStoryboard *loginStroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *viewCtrl = [loginStroyboard instantiateViewControllerWithIdentifier:@"loginCtrl"];
-        self.window.rootViewController = viewCtrl;
-    }
-        else
-        {
-            [[ServeManager sharedManager]autologin];
-        }
+//    if (![[ServeManager sharedManager]islogin]) {
+//        UIStoryboard *loginStroyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//        UIViewController *viewCtrl = [loginStroyboard instantiateViewControllerWithIdentifier:@"loginCtrl"];
+//        self.window.rootViewController = viewCtrl;
+//    }
+//        else
+//        {
+//            [[ServeManager sharedManager]autologin];
+//        }
     return YES;
 }
 

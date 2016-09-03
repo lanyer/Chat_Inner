@@ -480,9 +480,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="70" y="163" width="30" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="70" y="294" width="30" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="zRD-1B-oyf" kind="show" id="sut-Ul-Mcl"/>
                                 </connections>
@@ -495,9 +492,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="186" y="163" width="30" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="294" width="30" height="30"/>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRN-sY-HS9">
                                 <rect key="frame" x="371" y="166" width="30" height="30"/>
@@ -506,9 +500,6 @@
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="301" y="163" width="30" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="301" y="294" width="30" height="30"/>
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-gC-1NA">
@@ -519,9 +510,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="70" y="222" width="30" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="70" y="353" width="30" height="30"/>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-Wi-jC8">
                                 <rect key="frame" x="256" y="225" width="30" height="30"/>
@@ -530,9 +518,6 @@
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="186" y="222" width="30" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="353" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="cNg-Zq-KzT" kind="show" id="1Pq-RD-6ks"/>
@@ -546,9 +531,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="301" y="222" width="30" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="301" y="353" width="30" height="30"/>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8p-4c-bNd">
                                 <rect key="frame" x="140" y="285" width="30" height="30"/>
@@ -557,9 +539,6 @@
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="70" y="282" width="30" height="30"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="70" y="413" width="30" height="30"/>
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxI-8r-fFG">
@@ -570,9 +549,6 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="186" y="282" width="30" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="186" y="413" width="30" height="30"/>
-                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHx-bx-PfW">
                                 <rect key="frame" x="371" y="285" width="30" height="30"/>
@@ -582,12 +558,73 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="301" y="282" width="30" height="30"/>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="301" y="413" width="30" height="30"/>
-                                </variation>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gln-mX-dTV" firstAttribute="baseline" secondItem="fu8-Wi-jC8" secondAttribute="baseline" id="0Db-BC-mMi"/>
+                            <constraint firstItem="g8p-4c-bNd" firstAttribute="top" secondItem="SWX-gC-1NA" secondAttribute="bottom" constant="30" id="4rq-fG-klU"/>
+                            <constraint firstItem="ndz-rh-QjH" firstAttribute="top" secondItem="8s3-3s-1VD" secondAttribute="bottom" constant="230" id="ARD-u5-xib"/>
+                            <constraint firstItem="RxI-8r-fFG" firstAttribute="baseline" secondItem="g8p-4c-bNd" secondAttribute="baseline" id="Cfl-Tp-IUh"/>
+                            <constraint firstItem="XAE-kR-qel" firstAttribute="leading" secondItem="ndz-rh-QjH" secondAttribute="trailing" constant="86" id="EcD-cP-fXe"/>
+                            <constraint firstItem="gRN-sY-HS9" firstAttribute="leading" secondItem="XAE-kR-qel" secondAttribute="trailing" constant="85" id="LFh-3D-rCd"/>
+                            <constraint firstItem="SWX-gC-1NA" firstAttribute="leading" secondItem="g8p-4c-bNd" secondAttribute="leading" id="Nby-xh-C7q"/>
+                            <constraint firstItem="XAE-kR-qel" firstAttribute="leading" secondItem="fu8-Wi-jC8" secondAttribute="leading" id="PrW-In-gsw"/>
+                            <constraint firstItem="gHx-bx-PfW" firstAttribute="leading" secondItem="Gln-mX-dTV" secondAttribute="leading" id="Rbm-bH-3rI"/>
+                            <constraint firstItem="RxI-8r-fFG" firstAttribute="baseline" secondItem="gHx-bx-PfW" secondAttribute="baseline" id="Upt-Pf-yEA"/>
+                            <constraint firstItem="fu8-Wi-jC8" firstAttribute="baseline" secondItem="SWX-gC-1NA" secondAttribute="baseline" id="XIc-j7-6NO"/>
+                            <constraint firstItem="XAE-kR-qel" firstAttribute="baseline" secondItem="gRN-sY-HS9" secondAttribute="baseline" id="acF-SS-NV6"/>
+                            <constraint firstItem="Gln-mX-dTV" firstAttribute="leading" secondItem="gRN-sY-HS9" secondAttribute="leading" id="bxJ-4J-yGa"/>
+                            <constraint firstItem="ndz-rh-QjH" firstAttribute="leading" secondItem="SWX-gC-1NA" secondAttribute="leading" id="g97-Y3-AjK"/>
+                            <constraint firstItem="XAE-kR-qel" firstAttribute="baseline" secondItem="ndz-rh-QjH" secondAttribute="baseline" id="huD-AS-k6w"/>
+                            <constraint firstItem="ndz-rh-QjH" firstAttribute="leading" secondItem="sGi-MZ-pWA" secondAttribute="leadingMargin" constant="54" id="ieE-Yb-owg"/>
+                            <constraint firstItem="SWX-gC-1NA" firstAttribute="top" secondItem="ndz-rh-QjH" secondAttribute="bottom" constant="29" id="n3O-wK-ukt"/>
+                            <constraint firstItem="RxI-8r-fFG" firstAttribute="leading" secondItem="fu8-Wi-jC8" secondAttribute="leading" id="p2M-ak-2Q4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ARD-u5-xib"/>
+                                <exclude reference="g97-Y3-AjK"/>
+                                <exclude reference="ieE-Yb-owg"/>
+                                <exclude reference="EcD-cP-fXe"/>
+                                <exclude reference="PrW-In-gsw"/>
+                                <exclude reference="acF-SS-NV6"/>
+                                <exclude reference="huD-AS-k6w"/>
+                                <exclude reference="Nby-xh-C7q"/>
+                                <exclude reference="n3O-wK-ukt"/>
+                                <exclude reference="XIc-j7-6NO"/>
+                                <exclude reference="4rq-fG-klU"/>
+                                <exclude reference="LFh-3D-rCd"/>
+                                <exclude reference="Cfl-Tp-IUh"/>
+                                <exclude reference="Upt-Pf-yEA"/>
+                                <exclude reference="p2M-ak-2Q4"/>
+                                <exclude reference="0Db-BC-mMi"/>
+                                <exclude reference="bxJ-4J-yGa"/>
+                                <exclude reference="Rbm-bH-3rI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="ARD-u5-xib"/>
+                                <include reference="g97-Y3-AjK"/>
+                                <include reference="ieE-Yb-owg"/>
+                                <include reference="EcD-cP-fXe"/>
+                                <include reference="PrW-In-gsw"/>
+                                <include reference="acF-SS-NV6"/>
+                                <include reference="huD-AS-k6w"/>
+                                <include reference="Nby-xh-C7q"/>
+                                <include reference="n3O-wK-ukt"/>
+                                <include reference="XIc-j7-6NO"/>
+                                <include reference="4rq-fG-klU"/>
+                                <include reference="LFh-3D-rCd"/>
+                                <include reference="Cfl-Tp-IUh"/>
+                                <include reference="Upt-Pf-yEA"/>
+                                <include reference="p2M-ak-2Q4"/>
+                                <include reference="0Db-BC-mMi"/>
+                                <include reference="bxJ-4J-yGa"/>
+                                <include reference="Rbm-bH-3rI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="2c2-qP-LBf"/>
                 </viewController>
@@ -598,7 +635,7 @@
         <!--好友列表-->
         <scene sceneID="p3Z-TQ-zFL">
             <objects>
-                <viewController title="好友列表" id="cNg-Zq-KzT" sceneMemberID="viewController">
+                <viewController title="好友列表" id="cNg-Zq-KzT" customClass="FriendViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ud-g0-n8E"/>
                         <viewControllerLayoutGuide type="bottom" id="KF2-f2-4mk"/>
@@ -611,7 +648,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2XG-6T-7XN">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FirendCell" id="2XG-6T-7XN" customClass="FriendListTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2XG-6T-7XN" id="AhN-SV-hXt">
@@ -649,7 +686,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiD-Kd-6QC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="373.5"/>
+            <point key="canvasLocation" x="1908" y="353.25"/>
         </scene>
         <!--添加好友-->
         <scene sceneID="gj3-tH-pa2">
@@ -743,11 +780,11 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-nf-hEs">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="注销">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="168" y="203" width="46" height="30"/>
+                                    <rect key="frame" x="168" y="203" width="30" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="logoutClick:" destination="zRD-1B-oyf" eventType="touchUpInside" id="1SS-TE-n5B"/>

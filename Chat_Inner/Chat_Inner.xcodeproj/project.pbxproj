@@ -167,6 +167,8 @@
 		516A568C1D727F79002DFC7C /* UIView+Responder.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A568B1D727F79002DFC7C /* UIView+Responder.m */; };
 		516A57231D72B986002DFC7C /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A57221D72B986002DFC7C /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		51AA7F531D7A6C7C00AFB666 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */; };
+		51AA7F561D7A868F00AFB666 /* FriendListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA7F551D7A868F00AFB666 /* FriendListTableViewCell.m */; };
+		51AA7F5A1D7A8BB000AFB666 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA7F591D7A8BB000AFB666 /* FriendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -508,6 +510,10 @@
 		516A57221D72B986002DFC7C /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		51AA7F511D7A6C7C00AFB666 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		51AA7F541D7A868F00AFB666 /* FriendListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTableViewCell.h; sourceTree = "<group>"; };
+		51AA7F551D7A868F00AFB666 /* FriendListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTableViewCell.m; sourceTree = "<group>"; };
+		51AA7F581D7A8BB000AFB666 /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
+		51AA7F591D7A8BB000AFB666 /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -560,6 +566,7 @@
 				516A56851D718C70002DFC7C /* Common.m */,
 				516A568D1D727F83002DFC7C /* Utils */,
 				51380FC61D7156C100487776 /* Manager */,
+				51AA7F571D7A869D00AFB666 /* View */,
 				51380FBB1D71542700487776 /* Controllers */,
 				51380FCE1D71628700487776 /* Library */,
 				51380D9E1D71534200487776 /* Main.storyboard */,
@@ -1477,6 +1484,8 @@
 				51380FC11D71554700487776 /* ResgisterViewController.m */,
 				51AA7F511D7A6C7C00AFB666 /* SettingsViewController.h */,
 				51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */,
+				51AA7F581D7A8BB000AFB666 /* FriendViewController.h */,
+				51AA7F591D7A8BB000AFB666 /* FriendViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1527,6 +1536,15 @@
 				516A57221D72B986002DFC7C /* KeychainItemWrapper.m */,
 			);
 			path = KeyChain;
+			sourceTree = "<group>";
+		};
+		51AA7F571D7A869D00AFB666 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51AA7F541D7A868F00AFB666 /* FriendListTableViewCell.h */,
+				51AA7F551D7A868F00AFB666 /* FriendListTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1656,6 +1674,7 @@
 				51380F991D7153DD00487776 /* XMPPAttentionModule.m in Sources */,
 				51380F701D7153DD00487776 /* XMPPvCardTempModule.m in Sources */,
 				51380F601D7153DD00487776 /* XMPPRoomMessageMemoryStorageObject.m in Sources */,
+				51AA7F5A1D7A8BB000AFB666 /* FriendViewController.m in Sources */,
 				51380F5C1D7153DD00487776 /* XMPPRoomHybridStorage.m in Sources */,
 				51380F851D7153DD00487776 /* XMPPMessageArchiving.xcdatamodeld in Sources */,
 				51380F651D7153DD00487776 /* XMPPvCard.xcdatamodeld in Sources */,
@@ -1663,6 +1682,7 @@
 				51380D9D1D71534200487776 /* mainViewController.m in Sources */,
 				51380F341D7153DD00487776 /* NSNumber+XMPP.m in Sources */,
 				516A56861D718C70002DFC7C /* Common.m in Sources */,
+				51AA7F561D7A868F00AFB666 /* FriendListTableViewCell.m in Sources */,
 				51380F3D1D7153DD00487776 /* XMPPPresence.m in Sources */,
 				51380FAE1D7153DD00487776 /* DDContextFilterLogFormatter.m in Sources */,
 				51380F941D7153DD00487776 /* XMPPPing.m in Sources */,
