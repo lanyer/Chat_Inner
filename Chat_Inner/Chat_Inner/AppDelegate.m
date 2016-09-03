@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ServeManager.h"
+#import "myServeManager.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     
     
-    [ServeManager sharedManager].didLogin = ^{
+    [myServeManager sharedManager].didLogin = ^{
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil]; //weak self 
         UIViewController *viewCtrl = [storyboard instantiateInitialViewController];
         self.window.rootViewController = viewCtrl;

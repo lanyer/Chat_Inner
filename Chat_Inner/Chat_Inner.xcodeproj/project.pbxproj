@@ -159,7 +159,7 @@
 		51380FBD1D71544100487776 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51380FBC1D71544100487776 /* libxml2.dylib */; };
 		51380FBF1D71544B00487776 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 51380FBE1D71544B00487776 /* libresolv.dylib */; };
 		51380FC21D71554700487776 /* ResgisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FC11D71554700487776 /* ResgisterViewController.m */; };
-		51380FC51D7156A200487776 /* ServeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FC41D7156A200487776 /* ServeManager.m */; };
+		51380FC51D7156A200487776 /* myServeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FC41D7156A200487776 /* myServeManager.m */; };
 		51380FCC1D71627400487776 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 51380FC91D71627400487776 /* SVProgressHUD.bundle */; };
 		51380FCD1D71627400487776 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 51380FCB1D71627400487776 /* SVProgressHUD.m */; };
 		516A56861D718C70002DFC7C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A56851D718C70002DFC7C /* Common.m */; };
@@ -495,8 +495,8 @@
 		51380FBE1D71544B00487776 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		51380FC01D71554700487776 /* ResgisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResgisterViewController.h; sourceTree = "<group>"; };
 		51380FC11D71554700487776 /* ResgisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResgisterViewController.m; sourceTree = "<group>"; };
-		51380FC31D7156A200487776 /* ServeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServeManager.h; path = Chat_Inner/ServeManager.h; sourceTree = SOURCE_ROOT; };
-		51380FC41D7156A200487776 /* ServeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServeManager.m; path = Chat_Inner/ServeManager.m; sourceTree = SOURCE_ROOT; };
+		51380FC31D7156A200487776 /* myServeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myServeManager.h; path = Chat_Inner/myServeManager.h; sourceTree = SOURCE_ROOT; };
+		51380FC41D7156A200487776 /* myServeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myServeManager.m; path = Chat_Inner/myServeManager.m; sourceTree = SOURCE_ROOT; };
 		51380FC81D71627400487776 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
 		51380FC91D71627400487776 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		51380FCA1D71627400487776 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
@@ -1498,8 +1498,8 @@
 		51380FC61D7156C100487776 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				51380FC31D7156A200487776 /* ServeManager.h */,
-				51380FC41D7156A200487776 /* ServeManager.m */,
+				51380FC31D7156A200487776 /* myServeManager.h */,
+				51380FC41D7156A200487776 /* myServeManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -1800,7 +1800,7 @@
 				51380F971D7153DD00487776 /* NSXMLElement+XEP_0203.m in Sources */,
 				51380F391D7153DD00487776 /* XMPPJID.m in Sources */,
 				51380F401D7153DD00487776 /* XMPPCoreDataStorage.m in Sources */,
-				51380FC51D7156A200487776 /* ServeManager.m in Sources */,
+				51380FC51D7156A200487776 /* myServeManager.m in Sources */,
 				51380F9B1D7153DD00487776 /* XMPPMessage+XEP_0280.m in Sources */,
 				51380F7E1D7153DD00487776 /* XMPPTransports.m in Sources */,
 				51380F9C1D7153DD00487776 /* XMPPMessageCarbons.m in Sources */,

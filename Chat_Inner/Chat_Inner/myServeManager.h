@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "XMPPFramework.h"
 #import "XMPPStream.h"
-@interface ServeManager : NSObject
+@interface myServeManager : NSObject
 
 @property (nonatomic,copy) void (^didLogin)();//代码块 告诉视图登陆成功 发送上线通知
 +(instancetype)sharedManager;
@@ -26,5 +26,5 @@
 
 -(void)addFriend:(NSString *)username;
 -(NSManagedObject *)rosterContext;//用来管理用户列表
-
+-(XMPPvCardAvatarModule *)avataModule;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AddFriendViewController.h"
-#import "ServeManager.h"
+#import "myServeManager.h"
 @interface AddFriendViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextfield;
 - (IBAction)didAddClick:(UIButton *)sender;
@@ -39,7 +39,7 @@
 
 - (IBAction)didAddClick:(UIButton *)sender {
     if (_nameTextfield.text.length) {
-        [[ServeManager sharedManager]addFriend:_nameTextfield.text];
+        [[myServeManager sharedManager]addFriend:_nameTextfield.text];
     }
 }
 @end

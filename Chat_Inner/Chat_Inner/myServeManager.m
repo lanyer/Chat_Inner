@@ -6,14 +6,16 @@
 //  Copyright (c) 2016年 lanyer. All rights reserved.
 //
 
-#import "ServeManager.h"
+#import "myServeManager.h"
 #import "Common.h"
 #import "KeychainItemWrapper.h"
 
-@interface ServeManager ()<XMPPStreamDelegate>
+@interface myServeManager ()<XMPPStreamDelegate>
 {
     XMPPStream  *_xmppStream;
     XMPPRoster  *_xmppRoster;//管理好友关系
+    XMPPvCardTempModule *_xmppvCardTempModule;
+    XMPPvCardAvatarModule *_xmppavatarModule;
     
     NSString *_username;
     NSString *_password;
@@ -24,14 +26,14 @@
 
 @end
 
-@implementation ServeManager
+@implementation myServeManager
 
 +(instancetype)sharedManager{
-    static ServeManager *shareInstance  = nil;//声明一个静态变量存储唯一的对象
+    static myServeManager *shareInstance  = nil;//声明一个静态变量存储唯一的对象
     //判断对象是否存在 不存在则创建 过程中 判断在多线程环境下 也要安全
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        shareInstance = [[ServeManager alloc]init];
+        shareInstance = [[myServeManager alloc]init];
     });                             //dispatch once 内方法只会创建一次
     return shareInstance;
 }
@@ -55,6 +57,15 @@
     _xmppRoster = [[XMPPRoster alloc]initWithRosterStorage:storage];
     
     [_xmppRoster activate:_xmppStream];
+    
+    //电子名片
+    XMPPvCardCoreDataStorage *vCardStorage = [XMPPvCardCoreDataStorage sharedInstance];
+    _xmppvCardTempModule = [[XMPPvCardTempModule alloc]initWithvCardStorage:vCardStorage];
+    [_xmppvCardTempModule activate:_xmppStream];
+    
+    //头像
+    _xmppavatarModule = [[XMPPvCardAvatarModule alloc]initWithvCardTempModule:_xmppvCardTempModule];
+    [_xmppavatarModule activate:_xmppStream];
 }
 
 -(BOOL)islogin
@@ -161,6 +172,10 @@
     NSLog(@"断开连接...");
 }
 
+-(XMPPvCardAvatarModule *)avataModule
+{
+    return _xmppavatarModule;
+}
 #pragma marl - 登入
 //登入服务器
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender{
@@ -182,6 +197,8 @@
     [sender disconnect];
 }
 
+
+
 #pragma marl -注册
 -(void)xmppStreamDidRegister:(XMPPStream *)sender{
     NSLog(@"注册成功...");
@@ -195,6 +212,24 @@
     [[NSNotificationCenter defaultCenter]postNotificationName:kRegisterNotif object:nil userInfo:@{@"success":@(NO)}];
     [self saveUserInfo];//保存登入信息 账户密码 可以自动登入
 }
+
+-(void)xmppStream:(XMPPStream *)sender didReceivePresence:(XMPPPresence *)presence
+{
+    NSLog(@"YYYY:%@",presence);
+    
+    //需要在界面上体现
+    if ([[presence type]isEqualToString:@"unsubscribe"]) {
+        [_xmppRoster removeUser:presence.from];
+    }
+    else if ([[presence type]isEqualToString:@"subscribe"])
+    {
+        //接受好友请求
+       // [_xmppRoster acceptPresenceSubscriptionRequestFrom:presence.from andAddToRoster:YES];
+        //拒绝好友请求
+        [_xmppRoster rejectPresenceSubscriptionRequestFrom:presence.from];
+    }
+}
+
 
 -(void)online{
     XMPPPresence *presence = [XMPPPresence presenceWithType:@"on"];

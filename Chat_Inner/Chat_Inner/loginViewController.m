@@ -7,7 +7,7 @@
 //
 
 #import "loginViewController.h"
-#import "ServeManager.h"
+#import "myServeManager.h"
 #import "SVProgressHUD.h"
 @interface loginViewController ()
 - (IBAction)didlogin:(UIButton *)sender;
@@ -44,7 +44,7 @@
 //    UIViewController *viewCtrl = [stroyboard instantiateInitialViewController];
 //    self.view.window.rootViewController = viewCtrl;
     
-    [[ServeManager sharedManager]loginWithName:self.usernameTextfield.text Password:self.passwordTextfield.text];
+    [[myServeManager sharedManager]loginWithName:self.usernameTextfield.text Password:self.passwordTextfield.text];
  
     //按钮效果 
     //[SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];

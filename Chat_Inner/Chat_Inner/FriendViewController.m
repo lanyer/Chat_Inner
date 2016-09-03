@@ -10,9 +10,10 @@
 #import "FriendListTableViewCell.h"
 #import "XMPPFramework.h"
 #import <CoreData/CoreData.h>
-#import "ServeManager.h"
+#import "myServeManager.h"
+#import "XMPPvCardAvatarModule.h"
 
-@interface FriendViewController ()<UITableViewDataSource,UITableViewDelegate,NSFetchedResultsControllerDelegate>
+@interface FriendViewController ()<UITableViewDataSource,UITableViewDelegate,NSFetchedResultsControllerDelegate,XMPPvCardTempModuleDelegate>
 {
     NSFetchedResultsController *_resultController;//好友列表
 }
@@ -23,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSManagedObjectContext *context = [[ServeManager sharedManager] rosterContext];
+    NSManagedObjectContext *context = [[myServeManager sharedManager] rosterContext];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"XMPPUserCoreDataStorageObject" inManagedObjectContext:context];
     NSSortDescriptor *sd1 = [NSSortDescriptor sortDescriptorWithKey:@"sectionNum" ascending:YES];
     NSSortDescriptor *sd2 = [NSSortDescriptor sortDescriptorWithKey:@"displayName" ascending:YES];
@@ -63,7 +64,25 @@
 {
     FriendListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FriendCell" forIndexPath:indexPath];
     XMPPUserCoreDataStorageObject *user = [_resultController objectAtIndexPath:indexPath];
+   
     cell.nameLabel.text = user.jid.user;
+    
+    if (user.photo != nil) {
+        cell.imageView.image = user.photo;
+    }
+    else
+    {
+        //获取头像数据
+        NSData *photoData = [[[myServeManager sharedManager] avataModule]photoDataForJID:user.jid];
+        if (photoData != nil)
+        {
+            cell.avatarimageView.image = [UIImage imageWithData:photoData];
+        }
+        else
+        {
+            cell.avatarimageView.image = [UIImage imageNamed:@"Friends_head"];
+        }
+    }
     return cell;
 }
 
