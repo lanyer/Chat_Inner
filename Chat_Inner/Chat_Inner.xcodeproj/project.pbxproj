@@ -165,6 +165,8 @@
 		516A56861D718C70002DFC7C /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A56851D718C70002DFC7C /* Common.m */; };
 		516A56891D7196C4002DFC7C /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A56881D7196C4002DFC7C /* AccountViewController.m */; };
 		516A568C1D727F79002DFC7C /* UIView+Responder.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A568B1D727F79002DFC7C /* UIView+Responder.m */; };
+		516A57231D72B986002DFC7C /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A57221D72B986002DFC7C /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51AA7F531D7A6C7C00AFB666 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -502,6 +504,10 @@
 		516A56881D7196C4002DFC7C /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
 		516A568A1D727F79002DFC7C /* UIView+Responder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Responder.h"; sourceTree = "<group>"; };
 		516A568B1D727F79002DFC7C /* UIView+Responder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Responder.m"; sourceTree = "<group>"; };
+		516A57211D72B986002DFC7C /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		516A57221D72B986002DFC7C /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		51AA7F511D7A6C7C00AFB666 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1469,6 +1475,8 @@
 				51380FB91D71540400487776 /* loginViewController.m */,
 				51380FC01D71554700487776 /* ResgisterViewController.h */,
 				51380FC11D71554700487776 /* ResgisterViewController.m */,
+				51AA7F511D7A6C7C00AFB666 /* SettingsViewController.h */,
+				51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1496,6 +1504,7 @@
 		51380FCE1D71628700487776 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				516A57201D72B986002DFC7C /* KeyChain */,
 				51380FC71D71627400487776 /* SVProgressHUD */,
 				51380DBA1D7153DC00487776 /* XMPP */,
 			);
@@ -1509,6 +1518,15 @@
 				516A568B1D727F79002DFC7C /* UIView+Responder.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		516A57201D72B986002DFC7C /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				516A57211D72B986002DFC7C /* KeychainItemWrapper.h */,
+				516A57221D72B986002DFC7C /* KeychainItemWrapper.m */,
+			);
+			path = KeyChain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1739,6 +1757,7 @@
 				51380F6A1D7153DD00487776 /* XMPPvCardTemp.m in Sources */,
 				51380F441D7153DD00487776 /* XMPPGoogleSharedStatus.m in Sources */,
 				51380F481D7153DD00487776 /* XMPPResourceCoreDataStorageObject.m in Sources */,
+				516A57231D72B986002DFC7C /* KeychainItemWrapper.m in Sources */,
 				51380FA71D7153DD00487776 /* XMPPTimer.m in Sources */,
 				51380F2B1D7153DD00487776 /* XMPPAnonymousAuthentication.m in Sources */,
 				51380F901D7153DD00487776 /* XMPPStreamManagementMemoryStorage.m in Sources */,
@@ -1760,6 +1779,7 @@
 				51380F7E1D7153DD00487776 /* XMPPTransports.m in Sources */,
 				51380F9C1D7153DD00487776 /* XMPPMessageCarbons.m in Sources */,
 				51380FB21D7153DD00487776 /* NSString+DDXML.m in Sources */,
+				51AA7F531D7A6C7C00AFB666 /* SettingsViewController.m in Sources */,
 				51380F4E1D7153DD00487776 /* XMPPUserMemoryStorageObject.m in Sources */,
 				51380D971D71534200487776 /* main.m in Sources */,
 			);

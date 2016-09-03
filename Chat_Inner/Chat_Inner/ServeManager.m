@@ -8,6 +8,7 @@
 
 #import "ServeManager.h"
 #import "Common.h"
+#import "KeychainItemWrapper.h"
 
 @interface ServeManager ()<XMPPStreamDelegate>
 {
@@ -51,6 +52,31 @@
 {
     
 }
+
+-(BOOL)islogin
+{
+    KeychainItemWrapper *itemWrapper = [[KeychainItemWrapper alloc]initWithIdentifier:@"userInfo" accessGroup:nil];
+    _username = [itemWrapper objectForKey:(__bridge id)kSecAttrAccount];
+    _password = [itemWrapper objectForKey:(__bridge id)kSecValueData];
+    if (_username.length && _password.length) {
+        return YES;
+    }
+    return NO;
+}
+
+-(void)autologin
+{
+    [self loginWithName:_username Password:_password];
+}
+
+//保存登入信息 账户密码 可以自动登入
+-(void)saveUserInfo
+{
+    KeychainItemWrapper *itemWrapper = [[KeychainItemWrapper alloc]initWithIdentifier:@"userInfo" accessGroup:nil];
+    [itemWrapper setObject:_username forKey:(__bridge id)kSecAttrAccount];
+    [itemWrapper setObject:_password forKey:(__bridge id)kSecValueData];
+}
+
 //登陆
 -(void)loginWithName:(NSString *)username Password:(NSString *)password{
     
@@ -82,6 +108,13 @@
     }
 }
 
+//退出登入
+-(void)logout
+{
+    [_xmppStream disconnect];
+    KeychainItemWrapper *itemWrapper = [[KeychainItemWrapper alloc]initWithIdentifier:@"userInfo" accessGroup:nil];
+    [itemWrapper resetKeychainItem];
+}
 #pragma mark - XMPPStreamDelegate
 
 //连接服务器主要用到的方法
@@ -120,7 +153,7 @@
     }//判断是否有block对象
     [self online];//登入成功发送上线
     
-
+    [self saveUserInfo];
 }
 
 /**
@@ -143,6 +176,7 @@
     //注册失败后 因断开连接 才能进行第二次登陆
     [sender disconnect];
     [[NSNotificationCenter defaultCenter]postNotificationName:kRegisterNotif object:nil userInfo:@{@"success":@(NO)}];
+    [self saveUserInfo];//保存登入信息 账户密码 可以自动登入
 }
 
 -(void)online{
