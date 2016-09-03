@@ -13,6 +13,7 @@
 @interface ServeManager ()<XMPPStreamDelegate>
 {
     XMPPStream  *_xmppStream;
+    XMPPRoster  *_xmppRoster;//管理好友关系
     
     NSString *_username;
     NSString *_password;
@@ -50,7 +51,10 @@
 
 -(void)config
 {
+    XMPPRosterCoreDataStorage *storage = [XMPPRosterCoreDataStorage sharedInstance];
+    _xmppRoster = [[XMPPRoster alloc]initWithRosterStorage:storage];
     
+    [_xmppRoster activate:_xmppStream];
 }
 
 -(BOOL)islogin
@@ -114,6 +118,19 @@
     [_xmppStream disconnect];
     KeychainItemWrapper *itemWrapper = [[KeychainItemWrapper alloc]initWithIdentifier:@"userInfo" accessGroup:nil];
     [itemWrapper resetKeychainItem];
+}
+
+-(void)addFriend:(NSString *)username
+{
+    XMPPJID *jid = [XMPPJID jidWithString:[username stringByAppendingString:kHostName]];
+    [_xmppRoster addUser:jid withNickname:nil];
+}
+
+-(NSManagedObject *)rosterContext
+{
+    XMPPRosterCoreDataStorage *storage = _xmppRoster.xmppRosterStorage;
+    return [storage mainThreadManagedObjectContext];
+
 }
 #pragma mark - XMPPStreamDelegate
 

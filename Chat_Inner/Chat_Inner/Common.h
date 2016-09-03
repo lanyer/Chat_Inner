@@ -8,4 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const kRegisterNotif ;
+extern NSString *const kRegisterNotif;
+extern NSString *const kHostName;

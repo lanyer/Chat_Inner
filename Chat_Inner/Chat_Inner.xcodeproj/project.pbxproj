@@ -169,6 +169,7 @@
 		51AA7F531D7A6C7C00AFB666 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */; };
 		51AA7F561D7A868F00AFB666 /* FriendListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA7F551D7A868F00AFB666 /* FriendListTableViewCell.m */; };
 		51AA7F5A1D7A8BB000AFB666 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AA7F591D7A8BB000AFB666 /* FriendViewController.m */; };
+		51BCD1F11D7AC692006410FF /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51BCD1F01D7AC692006410FF /* AddFriendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -514,6 +515,8 @@
 		51AA7F551D7A868F00AFB666 /* FriendListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTableViewCell.m; sourceTree = "<group>"; };
 		51AA7F581D7A8BB000AFB666 /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
 		51AA7F591D7A8BB000AFB666 /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
+		51BCD1EF1D7AC692006410FF /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		51BCD1F01D7AC692006410FF /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1486,6 +1489,8 @@
 				51AA7F521D7A6C7C00AFB666 /* SettingsViewController.m */,
 				51AA7F581D7A8BB000AFB666 /* FriendViewController.h */,
 				51AA7F591D7A8BB000AFB666 /* FriendViewController.m */,
+				51BCD1EF1D7AC692006410FF /* AddFriendViewController.h */,
+				51BCD1F01D7AC692006410FF /* AddFriendViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -1657,6 +1662,7 @@
 				51380F6F1D7153DD00487776 /* XMPPvCardTempLabel.m in Sources */,
 				51380F951D7153DD00487776 /* XMPPAutoTime.m in Sources */,
 				51380F911D7153DD00487776 /* XMPPStreamManagementStanzas.m in Sources */,
+				51BCD1F11D7AC692006410FF /* AddFriendViewController.m in Sources */,
 				51380F7D1D7153DD00487776 /* XMPPSoftwareVersion.m in Sources */,
 				51380FB41D7153DD00487776 /* DDXMLElement.m in Sources */,
 				51380F671D7153DD00487776 /* XMPPvCardCoreDataStorage.m in Sources */,

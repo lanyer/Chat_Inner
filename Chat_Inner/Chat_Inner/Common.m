@@ -9,3 +9,4 @@
 #import "Common.h"
 
 NSString * const kRegisterNotif = @"didRegister";//定义 使用方便
+NSString * const kHostName = @"vpn.wuqiong.tk";

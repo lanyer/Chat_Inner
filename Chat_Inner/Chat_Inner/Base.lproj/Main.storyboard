@@ -472,7 +472,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndz-rh-QjH">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndz-rh-QjH">
                                 <rect key="frame" x="140" y="166" width="30" height="30"/>
                                 <state key="normal" title="设置">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -484,7 +484,7 @@
                                     <segue destination="zRD-1B-oyf" kind="show" id="sut-Ul-Mcl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAE-kR-qel">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAE-kR-qel">
                                 <rect key="frame" x="256" y="166" width="30" height="30"/>
                                 <state key="normal" title="日历">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -493,7 +493,7 @@
                                     <rect key="frame" x="186" y="163" width="30" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRN-sY-HS9">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRN-sY-HS9">
                                 <rect key="frame" x="371" y="166" width="30" height="30"/>
                                 <state key="normal" title="聊天">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -502,7 +502,7 @@
                                     <rect key="frame" x="301" y="163" width="30" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-gC-1NA">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-gC-1NA">
                                 <rect key="frame" x="140" y="225" width="30" height="30"/>
                                 <state key="normal" title="相册">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -511,7 +511,7 @@
                                     <rect key="frame" x="70" y="222" width="30" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-Wi-jC8">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu8-Wi-jC8">
                                 <rect key="frame" x="256" y="225" width="30" height="30"/>
                                 <state key="normal" title="好友">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -523,7 +523,7 @@
                                     <segue destination="cNg-Zq-KzT" kind="show" id="1Pq-RD-6ks"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gln-mX-dTV">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gln-mX-dTV">
                                 <rect key="frame" x="371" y="225" width="30" height="30"/>
                                 <state key="normal" title="地图">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -532,7 +532,7 @@
                                     <rect key="frame" x="301" y="222" width="30" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8p-4c-bNd">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8p-4c-bNd">
                                 <rect key="frame" x="140" y="285" width="30" height="30"/>
                                 <state key="normal" title="录音">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -541,7 +541,7 @@
                                     <rect key="frame" x="70" y="282" width="30" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxI-8r-fFG">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxI-8r-fFG">
                                 <rect key="frame" x="256" y="285" width="30" height="30"/>
                                 <state key="normal" title="事件">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -550,7 +550,7 @@
                                     <rect key="frame" x="186" y="282" width="30" height="30"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHx-bx-PfW">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHx-bx-PfW">
                                 <rect key="frame" x="371" y="285" width="30" height="30"/>
                                 <state key="normal" title="计划">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -586,18 +586,18 @@
                                 <exclude reference="ARD-u5-xib"/>
                                 <exclude reference="g97-Y3-AjK"/>
                                 <exclude reference="ieE-Yb-owg"/>
+                                <exclude reference="Nby-xh-C7q"/>
+                                <exclude reference="n3O-wK-ukt"/>
                                 <exclude reference="EcD-cP-fXe"/>
                                 <exclude reference="PrW-In-gsw"/>
                                 <exclude reference="acF-SS-NV6"/>
                                 <exclude reference="huD-AS-k6w"/>
-                                <exclude reference="Nby-xh-C7q"/>
-                                <exclude reference="n3O-wK-ukt"/>
-                                <exclude reference="XIc-j7-6NO"/>
                                 <exclude reference="4rq-fG-klU"/>
-                                <exclude reference="LFh-3D-rCd"/>
+                                <exclude reference="XIc-j7-6NO"/>
                                 <exclude reference="Cfl-Tp-IUh"/>
                                 <exclude reference="Upt-Pf-yEA"/>
                                 <exclude reference="p2M-ak-2Q4"/>
+                                <exclude reference="LFh-3D-rCd"/>
                                 <exclude reference="0Db-BC-mMi"/>
                                 <exclude reference="bxJ-4J-yGa"/>
                                 <exclude reference="Rbm-bH-3rI"/>
@@ -608,18 +608,18 @@
                                 <include reference="ARD-u5-xib"/>
                                 <include reference="g97-Y3-AjK"/>
                                 <include reference="ieE-Yb-owg"/>
+                                <include reference="Nby-xh-C7q"/>
+                                <include reference="n3O-wK-ukt"/>
                                 <include reference="EcD-cP-fXe"/>
                                 <include reference="PrW-In-gsw"/>
                                 <include reference="acF-SS-NV6"/>
                                 <include reference="huD-AS-k6w"/>
-                                <include reference="Nby-xh-C7q"/>
-                                <include reference="n3O-wK-ukt"/>
-                                <include reference="XIc-j7-6NO"/>
                                 <include reference="4rq-fG-klU"/>
-                                <include reference="LFh-3D-rCd"/>
+                                <include reference="XIc-j7-6NO"/>
                                 <include reference="Cfl-Tp-IUh"/>
                                 <include reference="Upt-Pf-yEA"/>
                                 <include reference="p2M-ak-2Q4"/>
+                                <include reference="LFh-3D-rCd"/>
                                 <include reference="0Db-BC-mMi"/>
                                 <include reference="bxJ-4J-yGa"/>
                                 <include reference="Rbm-bH-3rI"/>
@@ -648,20 +648,69 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FirendCell" id="2XG-6T-7XN" customClass="FriendListTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="71" id="2XG-6T-7XN" customClass="FriendListTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2XG-6T-7XN" id="AhN-SV-hXt">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkr-u5-nb6">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="84" y="5" width="91" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC6-9H-WjN">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="84" y="26" width="50" height="17"/>
+                                                    </variation>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_username" translatesAutoresizingMaskIntoConstraints="NO" id="nBt-7H-iIP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <color key="backgroundColor" red="0.97647058819999999" green="0.29411764709999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="21" y="3" width="40" height="40"/>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="Rkr-u5-nb6"/>
+                                                    <exclude reference="cC6-9H-WjN"/>
+                                                    <exclude reference="nBt-7H-iIP"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="Rkr-u5-nb6"/>
+                                                    <include reference="cC6-9H-WjN"/>
+                                                    <include reference="nBt-7H-iIP"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="avatarimageView" destination="nBt-7H-iIP" id="QCx-cC-C8V"/>
+                                            <outlet property="descLabel" destination="cC6-9H-WjN" id="caK-Vh-YIx"/>
+                                            <outlet property="nameLabel" destination="Rkr-u5-nb6" id="sP5-fB-p68"/>
                                             <segue destination="hhx-a7-Z5h" kind="show" id="hXa-6t-zhp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <rect key="frame" x="-5" y="0.0" width="400" height="800"/>
                                 </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="cNg-Zq-KzT" id="psb-Ve-Q0M"/>
+                                    <outlet property="delegate" destination="cNg-Zq-KzT" id="2C7-P4-end"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -683,6 +732,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="friendsTableView" destination="BYh-PQ-oht" id="Hz6-YH-kg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiD-Kd-6QC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -691,7 +743,7 @@
         <!--添加好友-->
         <scene sceneID="gj3-tH-pa2">
             <objects>
-                <viewController title="添加好友" id="ddC-Kq-jiV" sceneMemberID="viewController">
+                <viewController title="添加好友" id="ddC-Kq-jiV" customClass="AddFriendViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BeC-Wm-1Wa"/>
                         <viewControllerLayoutGuide type="bottom" id="FOr-Lt-AWd"/>
@@ -699,8 +751,56 @@
                     <view key="view" contentMode="scaleToFill" id="XC3-tL-MnS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1x-pr-Q1A">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="200" width="51" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-Sg-pQ9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="添加">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="274" y="196" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="didAddClick:" destination="ddC-Kq-jiV" eventType="touchUpInside" id="Y69-Z3-Ifb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="max-Tl-eGn">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="135" y="200" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="V1x-pr-Q1A"/>
+                                <exclude reference="LZE-Sg-pQ9"/>
+                                <exclude reference="max-Tl-eGn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="V1x-pr-Q1A"/>
+                                <include reference="LZE-Sg-pQ9"/>
+                                <include reference="max-Tl-eGn"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="nameTextfield" destination="max-Tl-eGn" id="8Pl-2U-j2q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3b9-Wr-4t6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -776,6 +876,7 @@
                         <viewControllerLayoutGuide type="bottom" id="E7n-ll-jST"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="paa-2V-VQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-nf-hEs">

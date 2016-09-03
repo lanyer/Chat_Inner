@@ -24,4 +24,7 @@
 -(void)autologin;
 -(void)logout;
 
+-(void)addFriend:(NSString *)username;
+-(NSManagedObject *)rosterContext;//用来管理用户列表
+
 @end

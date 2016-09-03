@@ -1,5 +1,5 @@
 //
-//  FriendViewController.h
+//  AddFriendViewController.h
 //  Chat_Inner
 //
 //  Created by lanyer on 16/9/3.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendViewController : UIViewController
-
+@interface AddFriendViewController : UIViewController
 
 @end
